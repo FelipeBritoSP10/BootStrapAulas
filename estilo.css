@@ -30,3 +30,19 @@ footer p {
 img{
     border-radius: 8px;
 }
+
+.fab.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fab.fa-instagram {
+    color: #e4405f; 
+}
+
+.fab.fa-linkedin {
+    color: #0077b5; 
+}
+
+.fab.fa-whatsapp-square {
+    color: #25d366; 
+}
