@@ -1,34 +1,83 @@
-.jumbotron {
+    .jumbotron {
     background-color: #f8f9fa;
-  }
-  .feature-icon {
+    }
+
+    .feature-icon {
     font-size: 3rem;
     margin-bottom: 20px;
-  }
+    }
 
-.navbar-brand {
+    .navbar-brand {
     font-size: 2rem;
-}
+    }
 
-.navbar-nav .nav-link {
+    .navbar-nav .nav-link {
     font-size: 1.2rem;
-}
+    }
 
-.card {
+    .card {
     transition: transform 0.3s;
     cursor: pointer;
-}
+    }
 
-.card:hover {
+    .card:hover {
     transform: translateY(-5px);
-}
+    }
 
-footer p {
+    footer p {
     font-size: 1.2rem;
-}
+    }
 
-img{
+    img{
     border-radius: 8px;
+    }
+
+    .jumbotron {
+    background-color: #f8f9fa;
+    }
+
+    .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    }
+
+    .navbar-brand {
+    font-size: 2rem;
+    }
+
+    .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    }
+
+    .card {
+    transition: transform 0.3s;
+    cursor: pointer;
+    }
+
+    .card:hover {
+    transform: translateY(-5px);
+    }
+
+    footer p {
+    font-size: 1.2rem;
+    }
+
+    img{
+    border-radius: 8px;
+    }
+
+    .fab.fa-facebook-square,
+    .fab.fa-instagram,
+    .fab.fa-linkedin,
+    .fab.fa-whatsapp-square {
+    transition: color 0.3s ease-in; 
+    }
+
+    .fab.fa-facebook-square:hover,
+    .fab.fa-instagram:hover,
+    .fab.fa-linkedin:hover,
+    .fab.fa-whatsapp-square:hover {
+    transform: scale(1.2); 
 }
 
 .fab.fa-facebook-square {
