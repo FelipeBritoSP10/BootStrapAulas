@@ -10,7 +10,7 @@
     .btn-primary:hover {
     transform: scale(1.1); 
     transition: transform 0.3s ease; 
-     }
+    }
  
     .navbar-brand {
     font-size: 2rem;
@@ -18,6 +18,31 @@
 
     .navbar-nav .nav-link {
     font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+    color: black;
+    transition: background-color 0.3s ease; 
+    transition: transform 0.3s;
+    cursor: pointer;
+    }
+      
+    .navbar-nav .nav-item .nav-link:hover {
+    background-color: #f0f0f0; 
+    transform: translateY(-5px);
+    }
+    
+    .navbar-brand {
+     transition: transform 0.3s ease; 
+    }
+    
+    .navbar-brand:hover {
+     transform: scale(1.1); 
+    }
+
+    .navbar-brand .feature-icon {
+     font-size: 0.8em; 
+     margin-right: 5px; 
     }
 
     .card {
@@ -28,7 +53,6 @@
     .card:hover {
     transform: translateY(-5px);
     }
-
 
     footer p {
     font-size: 1.2rem;
@@ -77,42 +101,42 @@
   .fab.fa-linkedin,
   .fab.fa-whatsapp-square {
    transition: color 0.3s ease-in; 
-}
+    }
 
-  .fab.fa-facebook-square:hover,
-  .fab.fa-instagram:hover,
-  .fab.fa-linkedin:hover,
-  .fab.fa-whatsapp-square:hover{
+ .fab.fa-facebook-square:hover,
+ .fab.fa-instagram:hover,
+ .fab.fa-linkedin:hover,
+ .fab.fa-whatsapp-square:hover{
   transform: scale(1.2); 
-  }
+    }
 
-  .fab.fa-facebook-square {
-  color: #3b5998;
-  }
+.fab.fa-facebook-square {
+    color: #3b5998;
+    }
 
-  .fab.fa-instagram {
-  color: #e4405f; 
-  }
+.fab.fa-instagram {
+    color: #e4405f; 
+    }
 
-  .fab.fa-linkedin {
-  color: #0077b5; 
-  }
+.fab.fa-linkedin {
+    color: #0077b5; 
+    }
 
-  .fab.fa-whatsapp-square {
-  color: #25d366; 
-  }
+.fab.fa-whatsapp-square {
+    color: #25d366; 
+    }
 
-  .feature-icon-html {
-  color: #e34c26;
-  font-size: 35px;
-  }
+.feature-icon-html {
+    color: #e34c26;
+    font-size: 35px;
+    }
   
   .feature-icon-css {
-  color: #2965f1;
-  font-size: 35px; 
-  }
+    color: #2965f1;
+    font-size: 35px; 
+    }
   
   .feature-icon-js {
-  color: #f0db4f;
-  font-size: 35px;
-  }
+    color: #f0db4f;
+    font-size: 35px;
+    } 
