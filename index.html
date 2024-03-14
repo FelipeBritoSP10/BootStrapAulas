@@ -16,10 +16,26 @@
   
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-  <a class="navbar-brand" href="#">Felipe Brito <i class="fas fa-code feature-icon"></i></a>
+  <a class="navbar-brand" href="#" id="open-modal"> Felipe Brito <i class="fas fa-code feature-icon"></i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
-  </button> 
+  </button>
+  <div class="modal fade" id="myImageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Felipe Brito</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+  <img src="felipe.jpg" alt="Minha Foto" class="img-fluid">
+  </div>
+  </div>
+  </div>
+  </div>
+  
   <div class="collapse navbar-collapse" id="navbarNav">
   <ul class="navbar-nav ml-auto">
   <li class="nav-item">
@@ -171,43 +187,42 @@
    </section>
 
    <section id="projetos-futuros" class="container mb-5">
-    <h2 class="text-center mb-4"><i class="fas fa-cogs"></i> Projetos</h2>
-    <p class="text-center mb-4">Você irá aprender em torno do curso fazer alguns projetos.</p>
-    <div class="row">
-    <div class="col-md-6">
-    <div class="card mb-4">
-    <div class="card-body">
-    <h3>Portifólio Responsivo</h3>
-    <p>Construir um portifólio responsivo usando o Bootstrap para demonstrar suas habilidades. Este projeto irá abordar conceitos como layout responsivo e componentes do Bootstrap.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-6">
-    <div class="card mb-4">
-    <div class="card-body">
-    <h3>Loja Virtual</h3>
-    <p>Construir uma loja virtual completa utilizando Bootstrap para criar um layout responsivo e agradável. Este projeto explorará conceitos como modais e componentes de navegação do Bootstrap.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-6">
-    <div class="card mb-4">
-    <div class="card-body">
-    <h3>Cards de produtos</h3>
-    <p>Construir cards de produtos com título, descrição, preço e botões. Este projeto ajudará a praticar a criação de layouts de produtos e a adição de botões.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-6">
-    <div class="card mb-4">
-    <div class="card-body">
-    <h3>Tela de login</h3>
-    <p>Construir uma tela de login simples e responsiva. Este projeto permitirá aos alunos praticar a criação de formulários de autenticação.</p>
-    </div>
-    </div>
-    </div>
-    </section>
-
+   <h2 class="text-center mb-4"><i class="fas fa-cogs"></i> Projetos</h2>
+   <p class="text-center mb-4">Você irá aprender em torno do curso fazer alguns projetos.</p>
+   <div class="row">
+   <div class="col-md-6">
+   <div class="card mb-4">
+   <div class="card-body">
+   <h3>Portifólio Responsivo</h3>
+   <p>Construir um portifólio responsivo usando o Bootstrap para demonstrar suas habilidades. Este projeto irá abordar conceitos como layout responsivo e componentes do Bootstrap.</p>
+   </div>
+   </div>
+   </div>
+   <div class="col-md-6">
+   <div class="card mb-4">
+   <div class="card-body">
+   <h3>Loja Virtual</h3>
+   <p>Construir uma loja virtual completa utilizando Bootstrap para criar um layout responsivo e agradável. Este projeto explorará conceitos como modais e componentes de navegação do Bootstrap.</p>
+   </div>
+   </div>
+   </div>
+   <div class="col-md-6">
+   <div class="card mb-4">
+   <div class="card-body">
+   <h3>Cards de produtos</h3>
+   <p>Construir cards de produtos com título, descrição, preço e botões. Este projeto ajudará a praticar a criação de layouts de produtos e a adição de botões.</p>
+   </div>
+   </div>
+   </div>
+   <div class="col-md-6">
+   <div class="card mb-4">
+   <div class="card-body">
+   <h3>Tela de login</h3>
+   <p>Construir uma tela de login simples e responsiva. Este projeto permitirá aos alunos praticar a criação de formulários de autenticação.</p>
+   </div>
+   </div>
+   </div>
+   </section>
 
     <section id="extras" class="container mb-5">
     <h2 class="text-center mb-4">Aulas Extras</h2>
@@ -337,6 +352,7 @@
     </div>
     </footer>
 
+  <script src="moviment.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
