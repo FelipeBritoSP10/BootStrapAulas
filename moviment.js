@@ -2,13 +2,11 @@
     document.getElementById('open-modal').addEventListener('click', function() {
     $('#myImageModal').modal('show');
   });
-    document.getElementById('open-modal').addEventListener('click', function() {
-    $('#myImageModal').modal('show');
-  });
+                        //Inscrição
     document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário por padrão
+    event.preventDefault();
 
-    // Obtenha os valores dos campos do formulário
+  
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
     const mensagem = document.getElementById('mensagem').value;
