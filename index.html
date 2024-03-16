@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -98,6 +99,7 @@
   </div>
   </section>
 
+
   <section id="aulas">
   <section class="container mb-5">
   <div class="row text-center">
@@ -117,7 +119,7 @@
   </div>
   </section>
   </section>
-   
+
   <section class="container mb-5">
   <div class="row text-center">
   <div class="col-md-4">
@@ -266,7 +268,7 @@
     </div>
     </div>
     </section>
-   
+
    <section class="container mb-5">
    <h3 class="text-center mb-4">Pagamento <i class="fas fa-money-bill-wave"></i> </h3>
    <div class="row justify-content-center">
@@ -305,59 +307,99 @@
    </ul>
    </div>
    </div>
-   </section>
-   </section>
    </div>
+   </section>
+   </section>
+  
+  <div class="card">
+  <div class="card-body text-center">
+  <h5 class="card-title">Inscreva-se</h5>
+  <p class="card-text">Preencha o formulário abaixo para se inscrever.</p>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalInscricao">Inscrever-se</button>
+  </div>
+  </div>
+  
+  <div class="modal fade" id="modalInscricao" tabindex="-1" role="dialog" aria-labelledby="modalInscricaoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered custom-modal" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="modalInscricaoLabel">Formulário de Inscrição</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+  <form id="subscriptionForm" action="https://api.staticforms.xyz/submit" method="post">
+  <div class="form-group">
+  <label for="nome">Nome:</label>
+  <input type="text" class="form-control" id="nome" name="name" placeholder="Insira seu nome" required>
+  </div>
+  <div class="form-group">
+  <label for="email">Email:</label>
+   <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+  </div>
+  <div class="form-group">
+  <label for="mensagem">Mensagem:</label>
+  <textarea class="form-control" id="mensagem" name="message" placeholder="Digite sua mensagem" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+  <input type="hidden" name="accessKey" value="bbd8a963-df97-4a9a-9652-c55b03f58ab1">
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
 
-   <section id="avaliacao-aulas" class="container mb-5">
-    <h2 class="text-center mb-4">Avaliação de Aulas</h2>
-    <p class="text-center">Por favor, deixe sua avaliação sobre as aulas que você participou.</p>
-    <p class="text-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfGLEiTdW9cXO6p7rs0jzPtcvxlE_INLCD9-DXhuNLQETpyUA/viewform?vc=0&c=0&w=1&flr=0" class="btn btn-primary">Avaliar Aulas</a></p>
+  <section id="avaliacao-aulas" class="container mb-5">
+  <h2 class="text-center mb-4">Avaliação de Aulas</h2>
+  <p class="text-center">Por favor, deixe sua avaliação sobre as aulas que você participou.</p>
+  <p class="text-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfGLEiTdW9cXO6p7rs0jzPtcvxlE_INLCD9-DXhuNLQETpyUA/viewform?vc=0&c=0&w=1&flr=0" class="btn btn-primary">Avaliar Aulas</a></p>
   </section>
+
+
    
-    <footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-    <div class="row">
-    <div class="col-md-4">
-    <h5>Links Rápidos</h5>
-    <ul class="list-unstyled">
-    <li><a href="#">Início</a></li>
-    <li><a href="#">Aulas</a></li>
-    <li><a href="#">Sobre</a></li>
-    <li><a href="#">Contato</a></li>
-    </ul>
-    </div>
-    <div class="col-md-4">
-    <h5>BootStrap</h5>
-    <p>Inscreva-se para receber nossas últimas atualizações.</p>
-    <form>
-    <div class="form-group">
-    <input type="email" class="form-control" placeholder="Seu e-mail">
-    </div>
-    <button type="submit" class="btn btn-primary">Inscrever-se</button>
-    </form>
-    <br>
-    </div>
-    <div class="col-md-4">
-    <h5>Links Úteis</h5>
-    <ul class="list-unstyled">
-    <li><a href="#">Política de Privacidade</a></li>
-    <li><a href="#">Termos de Uso</a></li>
-    <li><a href="#">Mapa do Site</a></li>
-    </ul>
-    </div>
-    </div>
-    <hr>
-    <div class="row">
-    <div class="col-md-6">
-    <p>&copy; 2024-25 Transformando ideias em realidade. Todos os direitos reservados.</p>
-    </div>
-    <div class="col-md-6">
-    <p>Felipe Brito</p>
-    </div>
-    </div>
-    </div>
-    </footer>
+  <footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-4">
+  <h5>Links Rápidos</h5>
+  <ul class="list-unstyled">
+  <li><a href="#">Início</a></li>
+  <li><a href="#">Aulas</a></li>
+  <li><a href="#">Sobre</a></li>
+  <li><a href="#">Contato</a></li>
+  </ul>
+  </div>
+  <div class="col-md-4">
+  <h5>BootStrap</h5>
+  <p>Entre em contato comigo para receber as últimas atualizações.</p>
+  <a href="https://api.whatsapp.com/send?phone=9181784689&text=Olá%20Felipe,%20estou%20interessado%20em%20atualizações%20de%20Bootstrap.%20Poderia%20me%20fornecer%20 mais atualizações?" class="btn btn-primary">Fale comigo</a>
+  <br>
+  <br>
+  </div>
+  <br>
+  <br>
+  </div>
+  <div class="col-md-4">
+  <h5>Links Úteis</h5>
+  <ul class="list-unstyled">
+  <li><a href="#">Política de Privacidade</a></li>
+  <li><a href="#">Termos de Uso</a></li>
+  <li><a href="#">Mapa do Site</a></li>
+  </ul>
+  </div>
+  </div>
+  <hr>
+  <div class="row">
+  <div class="col-md-6">
+  <p>&copy; 2024-25 Transformando ideias em realidade. Todos os direitos reservados.</p>
+  </div>
+  <div class="col-md-6">
+  <p>Felipe Brito</p>
+  </div>
+  </div>
+  </div>
+  </footer>
 
   <script src="./login.html"></script>
   <script src="./login.js"></script> 
