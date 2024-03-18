@@ -1,3 +1,4 @@
+
 body {
   overflow-x: hidden; /* Remove a rolagem horizontal da página */
 }
@@ -114,6 +115,16 @@ img {
 .feature-icon-js {
   color: #f0db4f;
   font-size: 35px;
+}
+
+.zoom-on-hover {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 /* A área do formulário permanecerá inalterada */
