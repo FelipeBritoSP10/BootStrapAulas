@@ -1,0 +1,150 @@
+body {
+  overflow-x: hidden; /* Remove a rolagem horizontal da página */
+}
+
+.jumbotron {
+  height: 600px;
+  background-image: url('../img/jumbroton.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #875dd9; 
+  color: #FFF;
+  transform: translateY(-5px);
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1); 
+}
+
+.navbar-brand .feature-icon {
+  font-size: 0.8em; 
+  margin-right: 5px; 
+}
+
+.card {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.fab.fa-facebook-square,
+.fab.fa-instagram,
+.fab.fa-linkedin,
+.fab.fa-whatsapp-square {
+  transition: color 0.3s ease-in; 
+}
+
+.fab.fa-facebook-square:hover,
+.fab.fa-instagram:hover,
+.fab.fa-linkedin:hover,
+.fab.fa-whatsapp-square:hover {
+  transform: scale(1.2); 
+}
+
+.fab.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fab.fa-instagram {
+  color: #e4405f; 
+}
+
+.fab.fa-linkedin {
+  color: #0077b5; 
+}
+
+.fab.fa-whatsapp-square {
+  color: #25d366; 
+}
+
+.feature-icon-html {
+  color: #e34c26;
+  font-size: 35px;
+}
+
+.feature-icon-css {
+  color: #2965f1;
+  font-size: 35px; 
+}
+
+.feature-icon-js {
+  color: #f0db4f;
+  font-size: 35px;
+}
+
+/* CSS mudando a cor dos focus dos inputs */
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #6528e0;
+  box-shadow: 0 0 0 0.2rem rgba(101, 40, 224, 0.25);
+}
+
+/*footer*/
+
+footer {
+  background-color: #4b0082; /* Cor roxa escura */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Para que a div abaixo seja fixada em relação ao rodapé */
+}
+
+.div-footer {
+  background-color: black;
+  padding: 10px;
+}
+
+.fixado-abaixo {
+  position: absolute; /* Para fixar a div abaixo no rodapé */
+  bottom: 0; /* Para posicioná-la na parte inferior */
+  left: 0; /* Para alinhá-la à esquerda */
+  width: 100%; /* Para que a div ocupe toda a largura do rodapé */
+}
+
+.texto-esquerda {
+  text-align: left; /* Alinha o texto à esquerda */
+  float: left; /* Alinha o texto à esquerda */
+}
+
+.direita {
+  float: right; /* Alinha os botões à direita */
+}
