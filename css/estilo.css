@@ -12,6 +12,11 @@ body {
   padding: 100px 0;
 }
 
+#container{
+  padding-top: 70px;
+  padding-left: 640px;
+}
+
 .feature-icon {
   font-size: 3rem;
   margin-bottom: 20px;
@@ -123,6 +128,7 @@ textarea.form-control:focus {
 /*footer*/
 
 footer {
+  
   background-color: #4b0082; /* Cor roxa escura */
   color: white;
   text-align: center;
@@ -149,4 +155,24 @@ footer {
 
 .direita {
   float: right; /* Alinha os botões à direita */
+}
+footer {
+  background-color: #4b0082; /* Cor roxa escura */
+  color: white;
+  text-align: center;
+  padding: 20px 0; /* Adicionando padding apenas no topo e na parte inferior */
+  width: 100%; /* Garantindo que o footer ocupe toda a largura */
+}
+
+@media (max-width: 767px) {
+  section {
+    margin-top: 90px;
+  }
+  #container{
+    padding-top: 0px;
+    padding-left: 0;
+  }
+  footer {
+    padding: 20px; /* Adicionando padding em todos os lados para telas menores */
+  }
 }

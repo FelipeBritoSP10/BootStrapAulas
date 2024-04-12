@@ -63,7 +63,7 @@
   </nav>
 
   <div class="jumbotron jumbotron-fluid">
-    <div class="container text-center" style="padding-top: 70px; padding-left: 640px;">
+    <div class="container text-center" id="container">
       <h1 class="display-4">Aulas de Bootstrap</h1>
       <p class="lead">Aprenda a criar sites incríveis com o poder do Bootstrap!</p>
       <a style="background: #825ad3; color: #fff;" class="btn btn-lg" href="#">Inscreva-se Agora</a>
@@ -129,7 +129,6 @@
           <div class="card-body">
             
             <div class="text-center">
-              <i class="bi bi-list-stars"></i>
             </div>
             <h3>Requisitos Mínimos</h3>
             <ul class="list-group list-group-flush text-left">
@@ -169,6 +168,9 @@
         <h2 class="text-center mb-4">Como serão as aulas via Google Meet?</h2>
         <div class="row justify-content-center">
           <div class="col-md-8">
+            <div class="row">
+              <img width="800" height="500" src="img/google-meet.jpg" alt="">
+            </div>
             <p class="lead">As aulas serão realizadas de forma virtual através da plataforma Google Meet.</p>
             <p>Algumas características das aulas no Google Meet incluem:</p>
             <ul>
@@ -181,9 +183,7 @@
               o Google Meet.</p>
           </div>
 
-          <div class="row">
-            <img width="400" height="300" src="img/google-meet.jpg" alt="">
-          </div>
+          
         </div>
       </section>
 
@@ -191,43 +191,53 @@
         <h2 class="text-center mb-4"><i class="fas fa-cogs"></i> Projetos que serão desenvolvidos</h2>
         <p class="text-center mb-4">Você irá aprender em torno do curso fazer alguns projetos.</p>
         <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h3>Portifólio Responsivo</h3>
-                <p>Construir um portifólio responsivo usando o Bootstrap para demonstrar suas habilidades. Este projeto
-                  irá abordar conceitos como layout responsivo e componentes do Bootstrap.</p>
-              </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/netflix.jpg" class="card-img-top" alt="Imagem do projeto">
+                    <div class="card-body">
+                        <h3>Projeto Netflix</h3>
+                        <p>Construção de uma interface semelhante ao Netflix.</p>
+                        <a href="#" class="btn stretched-link" style="background-color: #825ad3; color: #FFF;">Ver Projeto</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h3>Loja Virtual</h3>
-                <p>Construir uma loja virtual completa utilizando Bootstrap para criar um layout responsivo e agradável.
-                  Este projeto explorará conceitos como modais e componentes de navegação do Bootstrap.</p>
-              </div>
+    
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/pepsi.jpg" class="card-img-top" alt="Imagem do projeto">
+                    <div class="card-body">
+                        <h3>Projeto Pepsi</h3>
+                        <p>Construção de uma página promocional para a marca Pepsi.</p>
+                        <a href="https://pepsi-felipe.vercel.app" class="btn stretched-link" style="background-color: #825ad3; color: #FFF;">Ver Projeto</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h3>Cards de produtos</h3>
-                <p>Construir cards de produtos com título, descrição, preço e botões. Este projeto ajudará a praticar a
-                  criação de layouts de produtos e a adição de botões.</p>
-              </div>
+    
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/nike.jpg" class="card-img-top" alt="Imagem do projeto">
+                    <div class="card-body">
+                        <h3>Projeto Nike</h3>
+                        <p>Construção de uma página de produto para a marca Nike.</p>
+                        <a href="https://pizzaria-brito.vercel.app" class="btn  stretched-link" style="background-color: #825ad3; color: #FFF;">Ver Projeto</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h3>Tela de login</h3>
-                <p>Construir uma tela de login simples e responsiva. Este projeto permitirá aos alunos praticar a
-                  criação de formulários de autenticação.</p>
-              </div>
+    
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/pizzaria.jpg" class="card-img-top" alt="Imagem do projeto">
+                    <div class="card-body">
+                        <h3>Projeto Pizzaria</h3>
+                        <p>Construção de uma página para uma pizzaria local.</p>
+                        <a href="https://pizzaria-brito.vercel.app" class="btn  stretched-link" style="background-color: #825ad3; color: #FFF;">Ver Projeto</a>
+                    </div>
+                </div>
             </div>
-          </div>
-      </section>
+        </div>
+    </section>
+    
+    
 
 
       <section id="extras" class="container mb-5">
@@ -295,23 +305,23 @@
   </section>
 
   <section class="row justify-content-center">
-    <div style="background: #6528e0;" class="col-md-4 text-center">
-      <img width="350" height="350" src="img/maos-email.png" alt="">
+    <div style="background: #25D366;" class="col-md-4 text-center">
+        <img width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/598px-WhatsApp.svg.png" alt="">
     </div>
     <div class="col-md-4 text-center">
-      <h5>Entre em Contato</h5>
-      <form>
-          <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Seu nome">
-          </div>
-          <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Seu e-mail">
-          </div>
-          <div class="mb-3">
-              <textarea class="form-control" placeholder="Sua mensagem"></textarea>
-          </div>
-          <input style="background: #6528e0; color: #FFF; padding-left: 55px; padding-right: 55px;" type="submit" class="btn">
-      </form>
+        <h5>Enviar Mensagem via WhatsApp</h5>
+        <form id="form-whatsapp" onsubmit="return enviarMensagemWhatsApp()">
+            <div class="mb-3">
+                <input type="text" id="nome" class="form-control" placeholder="Seu nome" required>
+            </div>
+            <div class="mb-3">
+                <input type="tel" id="telefone" class="form-control" placeholder="Seu número de WhatsApp" value="+55" required>
+            </div>
+            <div class="mb-3">
+                <textarea id="mensagem" class="form-control" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <button style="background: #25D366; color: #FFF; padding-left: 55px; padding-right: 55px;" type="submit" class="btn">Enviar Mensagem</button>
+        </form>
     </div>
   </section>
   
@@ -347,6 +357,25 @@
   
   
 
+<script>
+function enviarMensagemWhatsApp() {
+    const nome = document.getElementById('nome').value;
+    let telefone = document.getElementById('telefone').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    // Remover caracteres não numéricos do número de telefone
+    telefone = telefone.replace(/\D/g, '');
+
+    // Montar o link para o WhatsApp com os dados preenchidos
+    const urlWhatsApp = `https://wa.me/${telefone}?text=Olá ${nome}! ${encodeURIComponent(mensagem)}`;
+
+    // Redirecionar para o WhatsApp
+    window.location.href = urlWhatsApp;
+
+    // Impedir o envio do formulário tradicional
+    return false;
+}
+</script>
 
   <script src="./login.html"></script>
   <script src="./login.js"></script>
