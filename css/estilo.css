@@ -164,13 +164,6 @@ footer {
   width: 100%; /* Garantindo que o footer ocupe toda a largura */
 }
 
-  .payment-options li {
-            margin-bottom: 10px;
-        }
-        
-        .payment-options li i {
-            margin-right: 10px;
-        }
 
 @media (max-width: 767px) {
   section {
