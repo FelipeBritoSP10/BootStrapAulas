@@ -1,10 +1,20 @@
-
 body {
   overflow-x: hidden; /* Remove a rolagem horizontal da página */
 }
 
 .jumbotron {
-  background-color: #f8f9fa;
+  height: 600px;
+  background-image: url('../img/jumbroton.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#container{
+  padding-top: 70px;
+  padding-left: 640px;
 }
 
 .feature-icon {
@@ -30,7 +40,8 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  background-color: #f0f0f0; 
+  background-color: #875dd9; 
+  color: #FFF;
   transform: translateY(-5px);
 }
 
@@ -43,18 +54,6 @@ body {
   margin-right: 5px; 
 }
 
-
-
-#jumbotron-img {
-  width: auto;
-  height: 500px;
-  padding: 50px;
-  background-image: url('../img/jumbroton.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .card {
   transition: transform 0.3s;
   cursor: pointer;
@@ -63,6 +62,8 @@ body {
 .card:hover {
   transform: translateY(-5px);
 }
+
+
 
 footer p {
   font-size: 1.2rem;
@@ -117,14 +118,61 @@ img {
   font-size: 35px;
 }
 
-.zoom-on-hover {
-  transition: transform 0.3s ease;
-  cursor: pointer;
+/* CSS mudando a cor dos focus dos inputs */
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #6528e0;
+  box-shadow: 0 0 0 0.2rem rgba(101, 40, 224, 0.25);
 }
 
-.zoom-on-hover:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+/*footer*/
+
+footer {
+  
+  background-color: #4b0082; /* Cor roxa escura */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Para que a div abaixo seja fixada em relação ao rodapé */
 }
 
-/* A área do formulário permanecerá inalterada */
+.div-footer {
+  background-color: black;
+  padding: 10px;
+}
+
+.fixado-abaixo {
+  position: absolute; /* Para fixar a div abaixo no rodapé */
+  bottom: 0; /* Para posicioná-la na parte inferior */
+  left: 0; /* Para alinhá-la à esquerda */
+  width: 100%; /* Para que a div ocupe toda a largura do rodapé */
+}
+
+.texto-esquerda {
+  text-align: left; /* Alinha o texto à esquerda */
+  float: left; /* Alinha o texto à esquerda */
+}
+
+.direita {
+  float: right; /* Alinha os botões à direita */
+}
+footer {
+  background-color: #4b0082; /* Cor roxa escura */
+  color: white;
+  text-align: center;
+  padding: 20px 0; /* Adicionando padding apenas no topo e na parte inferior */
+  width: 100%; /* Garantindo que o footer ocupe toda a largura */
+}
+
+@media (max-width: 767px) {
+  section {
+    margin-top: 90px;
+  }
+  #container{
+    padding-top: 0px;
+    padding-left: 0;
+  }
+  footer {
+    padding: 20px; /* Adicionando padding em todos os lados para telas menores */
+  }
+}
