@@ -164,19 +164,6 @@ footer {
   width: 100%; /* Garantindo que o footer ocupe toda a largura */
 }
 
-
-.payment-card {
-    background-color: #f8f9fa;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.payment-icon {
-    color: #825ad3;
-}
-
-
 @media (max-width: 767px) {
   section {
     margin-top: 90px;
