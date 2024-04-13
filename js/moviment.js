@@ -29,12 +29,12 @@
 
 
  document.addEventListener("DOMContentLoaded", function() {
-      ScrollReveal().reveal('.sr', {
-        delay: 200,    
-        duration: 2000, 
-        origin: 'bottom', 
-        distance: '20px',
-        easing: 'ease-in-out',
-        interval: 100 
-      });
+    ScrollReveal().reveal('.sr', {
+      delay: 200,    
+      duration: 2000, 
+      origin: 'bottom', 
+      distance: '20px',
+      easing: 'ease-in-out',
+      interval: 100 
     });
+  });
