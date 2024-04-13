@@ -158,6 +158,7 @@ sites responsivos e móveis.</span>
                 <h2 class="mb-0">
                     <button class="btn p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Aulas Virtuais via Google Meet
+                        <i class="fas fa-plus-minus ml-2"></i> <!-- Ícone de "+" ou "-" -->
                     </button>
                 </h2>
             </div>
@@ -428,6 +429,28 @@ function enviarMensagemWhatsApp() {
     // Impedir o envio do formulário tradicional
     return false;
 }
+
+   document.addEventListener('DOMContentLoaded', function() {
+        const accordions = document.querySelectorAll('.accordion .collapse');
+
+        accordions.forEach(function(accordion) {
+            accordion.addEventListener('show.bs.collapse', function() {
+                const icon = this.parentElement.querySelector('.fa-plus-minus');
+                if (icon) {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                }
+            });
+
+            accordion.addEventListener('hide.bs.collapse', function() {
+                const icon = this.parentElement.querySelector('.fa-plus-minus');
+                if (icon) {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+            });
+        });
+    });
 </script>
 
   <script src="./login.html"></script>
