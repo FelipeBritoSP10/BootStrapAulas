@@ -252,128 +252,200 @@ sites responsivos e móveis.</span>
 </section>
 
 
-      <section id="extras" class="container mb-5">
-        <h2 class="text-center mb-4"  style="font-size: 2rem;">Aulas Extras</h2>
-        <div class="row">
-              <div class="modal fade" id="githubModal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="githubModalLabel"><b>Curso de HTML</b></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <section id="extras" class="container mb-5">
+    <h2 class="text-center mb-4" style="font-size: 2rem;">Aulas Extras</h2>
+    <div class="row">
+        <div class="modal fade" id="htmlModal" tabindex="-1" aria-labelledby="htmlModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="htmlModalLabel"><b>Curso de HTML</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>No curso de HTML, exploraremos os alicerces da linguagem, abrangendo desde os fundamentos básicos até técnicas avançadas de estruturação de páginas web.</p>
+                        <br>
+                        <p>No curso, você aprenderá:</p>
+                        <ul>
+                            <li>Fundamentos do HTML para estruturar páginas web;</li>
+                            <li>Uso das tags HTML essenciais;</li>
+                            <li>Criação e estilização de formulários;</li>
+                            <li>Implementação de semântica HTML para melhor acessibilidade.</li>
+                        </ul>
+                        <br>
+                        <p>Curso ideal para iniciantes que desejam entrar no mundo da programação.</p>
+                        <br>
+                        <p>Aprimore suas habilidades de desenvolvimento com exemplos práticos e contextualizados, mergulhando no mundo do HTML e aplicando conceitos essenciais em situações reais.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/559181784689?text=Ol%C3%A1%20Felipe%20Brito%2C%20tenho%20interesse%20em%20seu%20curso%20de%20HTML" class="btn btn-success">Comprar curso</a>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-            <p>No curso de HTML, exploraremos os alicerces da linguagem, abrangendo desde os fundamentos básicos até técnicas avançadas de estruturação de páginas web.</p>
-            <br>
-            <p>No curso, você aprenderá:</p>
-            <ul>
-            <li>Fundamentos do HTML para estruturar páginas web;</li>
-            <li>Uso das tags HTML essenciais;</li>
-            <li>Criação e estilização de formulários;</li>
-            <li>Implementação de semântica HTML para melhor acessibilidade.</li>
-            </ul>
-            <br>
-            <p>Curso ideal para iniciantes que desejam entrar no mundo da programação.</p>
-            <br>
-            <p>Aprimore suas habilidades de desenvolvimento com exemplos práticos e contextualizados, mergulhando no mundo do HTML e aplicando conceitos essenciais em situações reais.</p>
-          </div>
-            <div class="modal-footer">
-            <a href="https://wa.me/559181784689?text=Ol%C3%A1%20Felipe%20Brito%2C%20tenho%20interesse%20em%20seu%20curso%20de%20HTML" class="btn btn-success">Comprar curso</a>
-            </div>
-        </div>
-    </div>
-</div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-            <div class="card-body text-center">
-            <i class="fab fa-html5 feature-icon-html"></i>
-            <br>
-            <br>
-          <p>Aprenda os fundamentos do HTML para criar estruturas de páginas da web.</p>
-          <br>
-          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" class="btn" style="background: #825ad3; color: #FFF;">Saiba mais</a>
-          </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body text-center">
-                <i class="fab fa-css3-alt feature-icon-css"></i>
-                <br>
-                <br>
-                <p>Explore as habilidades do CSS para estilizar suas páginas da web de forma atrativa.</p>
-                  <br>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" class="btn" style="background: #825ad3; color: #FFF;">Saiba mais</a>
-        </div>
-        </div>
         </div>
         <div class="col-md-4">
-        <div class="card mb-4">
-        <div class="card-body text-center">
-        <i class="fab fa-js-square feature-icon-js"></i>
-        <br>
-        <br>
-        <p>Domine o JavaScript para adicionar interatividade e dinamismo aos seus sites.</p>
-        <br>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="btn" style="background: #825ad3; color: #FFF;">Saiba mais</a>
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fab fa-html5 feature-icon-html"></i>
+                    <br><br>
+                    <p>Aprenda os fundamentos do HTML para criar estruturas de páginas da web.</p>
+                    <br>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#htmlModal" style="background: #825ad3; color: #FFF;">Saiba mais</button>
+                </div>
+            </div>
         </div>
-        </div>
+        <div class="modal fade" id="cssModal" tabindex="-1" aria-labelledby="cssModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cssModalLabel"><b>Curso de CSS</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>No curso de CSS, você irá explorar as habilidades necessárias para estilizar suas páginas da web de forma atrativa e responsiva.</p>
+                        <br>
+                        <p>No curso, você aprenderá:</p>
+                        <ul>
+                            <li>Princípios básicos e avançados de estilização com CSS;</li>
+                            <li>Técnicas modernas de layout, incluindo Flexbox e Grid;</li>
+                            <li>Estilização de formulários e elementos de interface do usuário;</li>
+                            <li>Criação de estilos responsivos para diferentes dispositivos.</li>
+                        </ul>
+                        <br>
+                        <p>Aprimore suas habilidades de design e torne suas páginas web visualmente atraentes e profissionais.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/559181784689?text=Ol%C3%A1%20Felipe%20Brito%2C%20tenho%20interesse%20em%20seu%20curso%20de%20CSS" class="btn btn-success">Comprar curso</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-md-4">
-        <div class="card mb-4">
-        <div class="card-body text-center">
-        <i class="fab fa-react" style="font-size: 3rem; color: #61dafb;"></i>
-        <br>
-        <br>
-        <p>Explore os conceitos do React JS para construir interfaces de usuário modernas e reativas.</p>
-        <br>
-        <a href="https://pt-br.reactjs.org/" class="btn" style="background: #825ad3; color: #FFF;">Saiba mais</a>
-        </div>
-        </div>
-        </div> 
-       <div class="modal fade" id="githubModal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="githubModalLabel"><b>Curso de GitHub</b></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fab fa-css3-alt feature-icon-css"></i>
+                    <br><br>
+                    <p>Explore as habilidades do CSS para estilizar suas páginas da web de forma atrativa.</p>
+                    <br>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cssModal" style="background: #825ad3; color: #FFF;">Saiba mais</button>
+                </div>
             </div>
-            <div class="modal-body">
-            <p>O curso GitHub oferece uma introdução completa à plataforma e suas principais funcionalidades.</p>
-            <br>
-            <p>No curso, você aprenderá:</p>
-            <ul>
-            <li>Como criar e gerenciar repositórios;</li>
-            <li>Colaboração com outros desenvolvedores usando pull requests;</li>
-            <li>Gerenciamento de problemas e projetos;</li>
-            <li>Como contribuir para projetos de código aberto.</li>
-            </ul>
-            <br>
-            <p>Curso ideal para iniciantes e intermediários que desejam dominar o GitHub para gerenciar projetos e colaborar efetivamente.</p>
-            <br>
-            <p>Aprenda com exemplos práticos e do mundo real para aprimorar suas habilidades de desenvolvimento.</p>
-          </div>
-            <div class="modal-footer">
-            <a href="https://wa.me/559181784689?text=Ol%C3%A1%20Felipe%20Brito%2C%20tenho%20interesse%20em%20seu%20curso%20de%20GitHub" class="btn btn-success">Comprar curso</a>
+        </div>
+        <div class="modal fade" id="jsModal" tabindex="-1" aria-labelledby="jsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="jsModalLabel"><b>Curso de JavaScript</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>No curso de JavaScript, você irá dominar uma das linguagens de programação mais populares e poderosas para desenvolvimento web.</p>
+                        <br>
+                        <p>No curso, você aprenderá:</p>
+                        <ul>
+                            <li>Fundamentos da linguagem JavaScript, incluindo variáveis, condicionais e loops;</li>
+                            <li>Manipulação do DOM para interagir com elementos HTML e estilizá-los dinamicamente;</li>
+                            <li>Trabalho com eventos para criar interatividade em suas páginas;</li>
+                            <li>Uso de funções assíncronas para lidar com requisições AJAX e Promises.</li>
+                        </ul>
+                        <br>
+                        <p>Aprimore suas habilidades de desenvolvimento web e torne suas aplicações mais dinâmicas e interativas com JavaScript.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/559181784689?text=Ol%C3%A1%20Felipe%20Brito%2C%20tenho%20interesse%20em%20seu%20curso%20de%20JavaScript" class="btn btn-success">Comprar curso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fab fa-js-square feature-icon-js"></i>
+                    <br><br>
+                    <p>Domine o JavaScript para adicionar interatividade e dinamismo aos seus sites.</p>
+                    <br>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#jsModal" style="background: #825ad3; color: #FFF;">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="reactModal" tabindex="-1" aria-labelledby="reactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="reactModalLabel"><b>Curso de React</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>No curso de React, você aprenderá a construir interfaces de usuário modernas e reativas com uma das bibliotecas JavaScript mais populares e poderosas.</p>
+                        <br>
+                        <p>No curso, você aprenderá:</p>
+                        <ul>
+                            <li>Conceitos fundamentais do React, incluindo componentes, props e state;</li>
+                            <li>Uso de JSX para escrever código JavaScript e HTML de forma integrada;</li>
+                            <li>Gestão de estado com o hook useState e efeitos com o hook useEffect;</li>
+                            <li>Criação de aplicações SPA (Single Page Applications) com React Router.</li>
+                        </ul>
+                        <br>
+                        <p>Desenvolva suas habilidades em desenvolvimento web front-end e construa aplicações mais poderosas e eficientes com React.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/559181784689?text=Ol%C3%A1%20Felipe%20Brito%2C%20tenho%20interesse%20em%20seu%20curso%20de%20React" class="btn btn-success">Comprar curso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fab fa-react" style="font-size: 3rem; color: #61dafb;"></i>
+                    <br><br>
+                    <p>Explore os conceitos do React JS para construir interfaces de usuário modernas e reativas.</p>
+                    <br>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#reactModal" style="background: #825ad3; color: #FFF;">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="githubModal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="githubModalLabel"><b>Curso de GitHub</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>O curso GitHub oferece uma introdução completa à plataforma e suas principais funcionalidades.</p>
+                        <br>
+                        <p>No curso, você aprenderá:</p>
+                        <ul>
+                            <li>Como criar e gerenciar repositórios;</li>
+                            <li>Colaboração com outros desenvolvedores usando pull requests;</li>
+                            <li>Gerenciamento de problemas e projetos;</li>
+                            <li>Como contribuir para projetos de código aberto.</li>
+                        </ul>
+                        <br>
+                        <p>Curso ideal para iniciantes e intermediários que desejam dominar o GitHub para gerenciar projetos e colaborar efetivamente.</p>
+                        <br>
+                        <p>Aprenda com exemplos práticos e do mundo real para aprimorar suas habilidades de desenvolvimento.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/559181784689?text=Ol%C3%A1%20Felipe%20Brito%2C%20tenho%20interesse%20em%20seu%20curso%20de%20GitHub" class="btn btn-success">Comprar curso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fab fa-github" style="font-size: 3rem; color: #000;"></i>
+                    <br><br>
+                    <p>Aprenda a utilizar o GitHub para hospedar seus projetos, colaborar com outros desenvolvedores e contribuir para projetos de código aberto.</p>
+                    <br>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#githubModal" style="background: #825ad3; color: #FFF;">Saiba mais</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-          <div class="col-md-4">
-          <div class="card mb-4">
-        <div class="card-body text-center">
-            <i class="fab fa-github" style="font-size: 3rem; color: #000;"></i>
-            <br>
-            <br>
-            <p>Aprenda a utilizar o GitHub para hospedar seus projetos, colaborar com outros desenvolvedores e contribuir para projetos de código aberto.</p>
-            <br>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#githubModal" style="background: #825ad3; color: #FFF;">Saiba mais</button>
-        </div>
-    </div>
-</div>
-        </section>
-
+</section>
         <section class="container mb-5">
         <h3 class="text-center mb-4"  style="font-size: 2rem;">Opções de Pagamento</h3>
         <div class="row justify-content-center">
