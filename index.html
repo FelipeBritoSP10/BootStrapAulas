@@ -193,14 +193,29 @@ Durante as aulas, o professor poderá compartilhar sua tela para apresentações
 <div class="max-w-xl mx-auto bg-white shadow-md rounded-md p-6 mb-5">
 <h2 class="text-lg font-bold mb-4">Tela de login</h2>
 <p class="text-gray-700 mb-4">Crie uma tela de login com campos para nome, senha e um botão azul.</p>       
-<a href="https://1drv.ms/w/c/1bb97f7e5f166c94/EWVqPJFTDxlIhBPwl3DKN0gB1rI1JFCGW-UCBUQjt6XFNA?e=E13x1I" class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded btn">Realizar atividade</a>
-<br>
-<br>
-<div class="alert alert-warning" role="alert">
-<strong>Esta atividade é recomendada após adquirir certos conhecimentos durante as aulas.</strong>
-</div>
-</div>
-</section>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmModal">Realizar atividade</button>
+            <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="confirmModalLabel">Confirmar Atividade</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Esta atividade é recomendada após adquirir certos conhecimentos durante as aulas. Tem certeza que deseja continuar?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                          
+                            <a href="https://1drv.ms/w/c/1bb97f7e5f166c94/EWVqPJFTDxlIhBPwl3DKN0gB1rI1JFCGW-UCBUQjt6XFNA?e=E13x1I" class="btn btn-primary">Confirmar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <section id="projetos-futuros" class="container mb-5">
 <h2 class="text-center mb-4" style="font-size: 2rem;">Projetos que serão desenvolvidos</h2>
