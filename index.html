@@ -680,6 +680,9 @@ function enviarMensagemWhatsApp() {
             });
         });
     });
+    if (!localStorage.getItem('authToken')) {
+        window.location.href = 'https://login-bootstrap-one.vercel.app';
+    }
 </script>
 
   <script src="./login.html"></script>
