@@ -35,23 +35,19 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS e dependências jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- JavaScript personalizado -->
     <script src="script.js"></script>
     <script>
-        // Redirecionar para o site após o login
         function redirectToSite() {
             window.location.href = "https://bootstrap-aulas.vercel.app/#";
         }
 
-        // Lidar com a submissão do formulário de login
+    
         document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Impede o envio padrão do formulário
+            event.preventDefault();
 
-            // Redirecionar para o site após o login
             redirectToSite();
         });
     </script>
