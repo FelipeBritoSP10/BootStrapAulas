@@ -105,47 +105,26 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
   
 <section class="container mb-5">
 <h2 class="text-center mb-4" style="font-size: 2rem; color: #825ad3; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); background: linear-gradient(to right, #825ad3, #2c3e50); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Requisitos para as aulas</h2>
-<div class="row">
-<div class="col-md-4">
-<div class="card mb-4">
-<div class="card-body">
-<div class="text-center">
-</div>
-<h3 style="text-align: center;"><i class="fas fa-check-circle fa-2x" style="color: #825ad3;"></i></h3>
-<ul class="list-group list-group-flush text-left">
-<li class="list-group-item">Conhecimento básico de HTML, CSS e JavaScript;</li>
-<li class="list-group-item">Um computador ou laptop;</li>
-<li class="list-group-item">Conexão à internet estável.</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card mb-4">
-<div class="card-body text-center">
-<h3><i class="fas fa-tools fa-2x" style="color: #825ad3;"></i></h3>
-<ul class="list-group list-group-flush text-left">
-<li class="list-group-item">Editor de código (por exemplo, Visual Studio Code);</li>
-<li class="list-group-item">Navegador da web moderno (por exemplo, Google Chrome, Mozilla Firefox ou
-Opera);</li>
-</ul>
-</div>
-</div>
-</div>
-  
-<div class="col-md-4">
-<div class="card mb-4">
-<div class="card-body text-center">
-<h3><i class="fas fa-book" style="font-size: 3rem; color: #825ad3;"></i></h3>
-<ul class="list-group list-group-flush text-left">
-<li class="list-group-item">Documentação oficial do Bootstrap;</li>
-<li class="list-group-item">Site W3Schools;</li>
-<li class="list-group-item">Projetos de exemplo e exercícios práticos.</li>
-</ul>
-</div>
-</div>
-</div>
+  <div class="w-full overflow-hidden">
+    <div class="flex slider-container">
+      <div class="w-full flex-shrink-0 relative">
+        <img class="w-full slider-image" src="front.jpg" alt="Slide 1">
+        <div class="text-center mt-2 slider-text">Conhecimento básico de HTML, CSS e JavaScript</div>
+      </div>
+      <div class="w-full flex-shrink-0 relative hidden">
+        <img class="w-full slider-image" src="computador.jpg" alt="Slide 2">
+        <div class="text-center mt-2 slider-text">Um computador ou laptop</div>
+      </div>
+      <div class="w-full flex-shrink-0 relative hidden">
+        <img class="w-full slider-image" src="code.jpg" alt="Slide 3">
+        <div class="text-center mt-2 slider-text">Editor de código</div>
+      </div>
+        <div class="w-full flex-shrink-0 relative hidden">
+        <img class="w-full slider-image" src="navegador.jpg" alt="Slide 3">
+        <div class="text-center mt-2 slider-text">Navegador da web</div>
+      </div>
+    </div>
+  </div>
   
   <section class="container mb-5">
        <h2 class="text-center mb-4" style="font-size: 2rem; color: #825ad3; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); background: linear-gradient(to right, #825ad3, #2c3e50); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Como serão as aulas via Google Meet?</h2>
@@ -691,6 +670,22 @@ function enviarMensagemWhatsApp() {
     function redirectToMainSite() {
         window.location.href = 'https://bootstrap-aulas.vercel.app';
     }
+   const slider = document.querySelector('.slider-container');
+    const slides = slider.querySelectorAll('.flex-shrink-0');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      // Oculta todos os slides
+      slides.forEach(slide => slide.classList.add('hidden'));
+      slides[index].classList.remove('hidden');
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 3000); 
 </script>
 
   <script src="./login.html"></script>
