@@ -181,6 +181,11 @@ footer {
       margin: 0 auto;
     }
 
+  .slider-text-container {
+  max-width: 150px; 
+  margin: 0 auto; 
+}
+
     .slider-image {
       transition: opacity 0.5s ease-in-out;
       max-width: 350px; 
