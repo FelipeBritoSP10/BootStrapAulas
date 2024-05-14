@@ -696,30 +696,22 @@ function enviarMensagemWhatsApp() {
 
     setInterval(nextSlide, 5000); 
 
-function searchCourses() {
-        // Recuperar o termo de pesquisa digitado pelo usuário
-        var searchTerm = document.getElementById("searchInput").value.toLowerCase().trim();
+ function searchCourses() {
+        var input = document.getElementById("searchInput").value.toLowerCase();
 
-        // Selecionar os elementos que representam os cards dos cursos
-        var cardElements = document.querySelectorAll('.container #extras .card');
-
-        // Iterar sobre os elementos dos cards
-        cardElements.forEach(function(cardElement) {
-            // Recuperar o texto do título do card e torná-lo minúsculo
-            var cardTitle = cardElement.querySelector('.modal-title').textContent.toLowerCase();
-
-            // Recuperar o modal associado ao card
-            var modalId = cardElement.getAttribute('data-bs-target');
-
-            // Se o termo de pesquisa estiver presente no título do card, exibir o card e seu modal, caso contrário, ocultá-los
-            if (cardTitle.includes(searchTerm)) {
-                cardElement.style.display = "block";
-                document.querySelector(modalId).style.display = "block";
-            } else {
-                cardElement.style.display = "none";
-                document.querySelector(modalId).style.display = "none";
-            }
-        });
+        if (input.includes("html")) {
+            $('#htmlModal').modal('show');
+        } else if (input.includes("css")) {
+            $('#cssModal').modal('show');
+        } else if (input.includes("javascript") || input.includes("js")) {
+            $('#jsModal').modal('show');
+        } else if (input.includes("react")) {
+            $('#reactModal').modal('show');
+        } else if (input.includes("github")) {
+            $('#githubModal').modal('show');
+        } else if (input.includes("git")) {
+            $('#gitModal').modal('show');
+        }
     }
   
 </script>
