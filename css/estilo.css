@@ -205,3 +205,12 @@ footer {
       text-align: center;
       opacity: 1;
     }
+
+.navbar-nav {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.form-control {
+  flex-grow: 1;
+}
