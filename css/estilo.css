@@ -206,10 +206,16 @@ footer {
       opacity: 1;
     }
 
-.form-inline .form-control {
-  flex-grow: 1;
+.form-inline .input-group {
+  width: 50%;
 }
 
-.form-inline .btn {
-  margin-left: 10px;
+.form-inline .input-group .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-inline .input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
