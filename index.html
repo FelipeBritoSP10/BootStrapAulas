@@ -27,7 +27,7 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 </button>
 <form class="form-inline my-2 my-lg-0">
 <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Pesquisar cursos..." aria-label="Pesquisar" oninput="searchCourses()">
-<button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="searchCourses()">Pesquisar</button>
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="searchCourses()" style="color: #825ad3; border-color: #825ad3;">Pesquisar</button>
 </form>
 </div>
 <div class="collapse navbar-collapse" id="navbarNav">
@@ -694,22 +694,28 @@ function enviarMensagemWhatsApp() {
 
     setInterval(nextSlide, 5000); 
 
- function searchCourses() {
-    
+function searchCourses() {
+        // Recuperar o termo de pesquisa digitado pelo usuário
         var searchTerm = document.getElementById("searchInput").value.toLowerCase().trim();
-   
+
+        // Selecionar os elementos que representam os cards dos cursos
         var cardElements = document.querySelectorAll('.container #extras .card');
-   
+
+        // Iterar sobre os elementos dos cards
         cardElements.forEach(function(cardElement) {
-          
+            // Recuperar o texto do título do card e torná-lo minúsculo
             var cardTitle = cardElement.querySelector('.modal-title').textContent.toLowerCase();
 
+            // Recuperar o modal associado ao card
+            var modalId = cardElement.getAttribute('data-bs-target');
+
+            // Se o termo de pesquisa estiver presente no título do card, exibir o card e seu modal, caso contrário, ocultá-los
             if (cardTitle.includes(searchTerm)) {
-              
                 cardElement.style.display = "block";
+                document.querySelector(modalId).style.display = "block";
             } else {
-                
                 cardElement.style.display = "none";
+                document.querySelector(modalId).style.display = "none";
             }
         });
     }
