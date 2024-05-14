@@ -206,11 +206,10 @@ footer {
       opacity: 1;
     }
 
-.navbar-nav {
+.form-inline .form-control {
   flex-grow: 1;
-  justify-content: flex-end;
 }
 
-.form-control {
-  flex-grow: 1;
+.form-inline .btn {
+  margin-left: 10px;
 }
