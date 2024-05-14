@@ -27,7 +27,7 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 </button>
 <form class="form-inline my-2 my-lg-0">
 <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Pesquisar cursos..." aria-label="Pesquisar" oninput="searchCourses()">
-<button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="searchCourses()" style="color: #825ad3; border-color: #825ad3; background-color: transparent;">
+<button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchCourses()" style="color: #825ad3; border-color: #825ad3; background-color: transparent;">
     Pesquisar
 </button>
 </form>
@@ -697,6 +697,7 @@ function enviarMensagemWhatsApp() {
     setInterval(nextSlide, 5000); 
 
  function searchCourses() {
+  
         var input = document.getElementById("searchInput").value.toLowerCase();
 
         if (input.includes("html")) {
