@@ -47,6 +47,10 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 <a class="nav-link" href="#extras">Extras</a>
 </li>
 </ul>
+<form class="form-inline my-2 my-lg-0" id="search-form">
+<input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Buscar" id="search-input">
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+</form>
 </div>
 </nav> 
 
@@ -689,6 +693,32 @@ function enviarMensagemWhatsApp() {
     }
 
     setInterval(nextSlide, 5000); 
+
+
+
+document.getElementById('search-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var searchTerm = document.getElementById('search-input').value.toLowerCase();
+
+        var searchTermsToModalIds = {
+            'html': 'htmlModal',
+            'css': 'cssModal',
+            'javascript': 'jsModal',
+            'react': 'reactModal',
+            'github': 'githubModal',
+            'git': 'gitModal'
+            
+        };
+
+      
+        if (searchTerm in searchTermsToModalIds) {
+            var modalId = searchTermsToModalIds[searchTerm];
+            $('#'+modalId).modal('show');
+        } else {
+            alert('Curso não encontrado.');
+        }
+    });
+  
 </script>
 
   <script src="./login.html"></script>
