@@ -24,6 +24,15 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="#" id="open-modal">Felipe Brito <i class="fas fa-code feature-icon"></i></a>
+        <form class="form-inline my-2 my-lg-0 mr-auto">
+            <div class="input-group">
+                <input id="searchInput" class="form-control" type="search" placeholder="Pesquisar cursos..."
+                       aria-label="Pesquisar" oninput="searchCourses()">
+            </div>
+            <button class="btn btn-purple" type="button" onclick="searchCourses()">
+                Pesquisar
+            </button>
+        </form>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,18 +59,9 @@
                 </li>
             </ul>
         </div>
-        <form class="form-inline my-2 my-lg-0 ml-auto">
-            <div class="input-group">
-                <input id="searchInput" class="form-control" type="search" placeholder="Pesquisar cursos..."
-                       aria-label="Pesquisar" oninput="searchCourses()">
-            </div>
-            <button class="btn btn-purple" type="button" onclick="searchCourses()">
-                Pesquisar
-            </button>
-        </form>
     </div>
 </nav>
-
+  
 <div class="jumbotron jumbotron-fluid">
 <div class="container text-center">
 <h1 class="display-4">Aulas de Programação</h1>
