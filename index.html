@@ -696,10 +696,9 @@ function enviarMensagemWhatsApp() {
 
     setInterval(nextSlide, 5000); 
 
- function searchCourses() {
-  
+     function searchCourses() {
         var input = document.getElementById("searchInput").value.toLowerCase();
-
+       
         if (input.includes("html")) {
             $('#htmlModal').modal('show');
         } else if (input.includes("css")) {
@@ -712,6 +711,8 @@ function enviarMensagemWhatsApp() {
             $('#githubModal').modal('show');
         } else if (input.includes("git")) {
             $('#gitModal').modal('show');
+        } else {
+            alert("Nenhum curso correspondente encontrado!");
         }
     }
   
