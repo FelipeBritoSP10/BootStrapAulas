@@ -708,6 +708,15 @@ function searchCourses() {
         alert("Insira algum curso! Por favor!");
         return;
     } else {
+        // Adicionar ou remover o ícone de acordo com a pesquisa do usuário
+        document.getElementById("htmlIcon").style.display = /\bhtml\b/.test(input) ? "inline" : "none";
+        document.getElementById("cssIcon").style.display = /\bcss\b/.test(input) ? "inline" : "none";
+        document.getElementById("jsIcon").style.display = /\b(javascript|js)\b/.test(input) ? "inline" : "none";
+        document.getElementById("reactIcon").style.display = /\breact\b/.test(input) ? "inline" : "none";
+        document.getElementById("gitIcon").style.display = /\bgit\b/.test(input) ? "inline" : "none";
+        document.getElementById("githubIcon").style.display = /\bgithub\b/.test(input) ? "inline" : "none";
+
+        // Mostrar o modal correspondente se encontrado
         if (/\bhtml\b/.test(input)) {
             $('#htmlModal').modal('show');
         } else if (/\bcss\b/.test(input)) {
