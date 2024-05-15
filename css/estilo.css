@@ -224,3 +224,7 @@ footer {
     background-color: #825ad3;
     color: #fff; 
 }
+
+.hover-purple:hover {
+    border-color: #825ad3; 
+}
