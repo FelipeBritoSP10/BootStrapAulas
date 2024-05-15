@@ -696,12 +696,11 @@ function enviarMensagemWhatsApp() {
 
     setInterval(nextSlide, 5000); 
 
-      function searchCourses() {
+     function searchCourses() {
         var input = document.getElementById("searchInput").value.toLowerCase();
 
         if (input === "") {
-          
-            alert("Insira algum curso! Por favor!");
+            return;
         } else {
             var courses = ["html", "css", "javascript", "react", "github", "git"];
             var found = false;
@@ -711,7 +710,7 @@ function enviarMensagemWhatsApp() {
                     found = true;
                 }
             });
-          
+
             if (!found) {
                 alert("Nenhum curso correspondente encontrado!");
             }
