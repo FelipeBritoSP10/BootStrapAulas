@@ -220,12 +220,7 @@ footer {
   border-bottom-left-radius: 0;
 }
 
-  .hover-purple:hover {
-    background-color: #825ad3;
-    color: white; 
-}
-
-.hover-purple:hover {
-    border-color: #825ad3; 
-    color: white;
-}
+    .hover-purple:hover {
+        background-color: #825ad3;
+        color: #fff;
+    }
