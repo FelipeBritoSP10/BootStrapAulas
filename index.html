@@ -696,30 +696,27 @@ function enviarMensagemWhatsApp() {
 
     setInterval(nextSlide, 5000); 
 
-        function searchCourses() {
+       function searchCourses() {
         var input = document.getElementById("searchInput").value.toLowerCase();
+
+        var courses = ["html", "css", "javascript", "react", "github", "git"];
 
         if (input === "") {
             alert("Insira algum curso! Por favor!");
         } else {
-            if (input.includes("html")) {
-                $('#htmlModal').modal('show');
-            } else if (input.includes("css")) {
-                $('#cssModal').modal('show');
-            } else if (input.includes("javascript") || input.includes("js")) {
-                $('#jsModal').modal('show');
-            } else if (input.includes("react")) {
-                $('#reactModal').modal('show');
-            } else if (input.includes("github")) {
-                $('#githubModal').modal('show');
-            } else if (input.includes("git")) {
-                $('#gitModal').modal('show');
-            } else {
+            var found = false;
+            courses.forEach(function (course) {
+                if (course.includes(input)) {
+                    $('#' + course + 'Modal').modal('show');
+                    found = true;
+                }
+            });
+
+            if (!found) {
                 alert("Nenhum curso correspondente encontrado!");
             }
         }
     }
-  
 </script>
 
   <script src="./login.html"></script>
