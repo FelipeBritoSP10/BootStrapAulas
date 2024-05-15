@@ -696,26 +696,25 @@ function enviarMensagemWhatsApp() {
 
     setInterval(nextSlide, 5000); 
 
-    function searchCourses() {
-        // Obtenha o valor digitado pelo usuário na barra de pesquisa
+      function searchCourses() {
         var input = document.getElementById("searchInput").value.toLowerCase();
 
-        // Array com os títulos completos dos cursos
-        var courses = ["html", "css", "javascript", "react", "github", "git"];
-
-        // Verifique se o nome do curso digitado está incluído no título completo de algum curso
-        var found = false;
-        courses.forEach(function (course) {
-            if (course.includes(input)) {
-                // Se o nome do curso estiver incluído, exiba o modal correspondente
-                $('#' + course + 'Modal').modal('show');
-                found = true;
+        if (input === "") {
+          
+            alert("Insira algum curso! Por favor!");
+        } else {
+            var courses = ["html", "css", "javascript", "react", "github", "git"];
+            var found = false;
+            courses.forEach(function(course) {
+                if (input.includes(course)) {
+                    $('#' + course + 'Modal').modal('show');
+                    found = true;
+                }
+            });
+          
+            if (!found) {
+                alert("Nenhum curso correspondente encontrado!");
             }
-        });
-
-        // Se nenhum curso correspondente for encontrado, exiba uma mensagem
-        if (!found) {
-            alert("Nenhum curso correspondente encontrado!");
         }
     }
 </script>
