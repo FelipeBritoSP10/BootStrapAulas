@@ -220,7 +220,7 @@ footer {
   border-bottom-left-radius: 0;
 }
 
-  .btn-outline-success:hover {
-        background-color: #825ad3;
-        color: #fff; 
-    }
+  .hover-purple:hover {
+    background-color: #825ad3;
+    color: #fff; 
+}
