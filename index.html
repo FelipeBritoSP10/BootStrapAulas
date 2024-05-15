@@ -30,10 +30,12 @@ aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 </button>
 <form class="form-inline my-2 my-lg-0">
 <div class="input-group">
-  <input id="searchInput" class="form-control" type="search" placeholder="Pesquisar cursos..." aria-label="Pesquisar" oninput="searchCourses()">
-  <span class="input-group-text" onclick="searchCourses()">
-    <i class="fas fa-search"></i>
+  <span class="input-group-prepend">
+    <span class="input-group-text" onclick="searchCourses()">
+      <i class="fas fa-search"></i>
+    </span>
   </span>
+  <input id="searchInput" class="form-control" type="search" placeholder="Pesquisar cursos..." aria-label="Pesquisar" oninput="searchCourses()">
 </div>
 <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchCourses()" style="color: #825ad3; border-color: #825ad3; background-color: transparent;">
     Pesquisar
