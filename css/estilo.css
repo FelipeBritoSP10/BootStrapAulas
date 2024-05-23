@@ -28,44 +28,18 @@ body {
 }
 
 
-
-
-.navbar-nav .nav-link {
-  font-size: 1.2rem;
-}
-
-.navbar-nav .nav-item .nav-link {
-  color: black;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-  background-color: #875dd9; 
-  color: #FFF;
-  transform: translateY(-5px);
-}
-
-
- .navbar-brand {
-      margin-left: 25px;
-      font-family: 'Montserrat', sans-serif;
+  .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
             font-size: 2.5rem;
             background: linear-gradient(45deg, #d16ba5, #9b59b6, #8e44ad, #5ffbf1); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto suave */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
             position: relative;
- }
+            margin-left: 20px;
+        }
 
-.navbar-brand:hover {
-  transform: scale(1.1); 
-}
-
-.navbar-brand .feature-icon {
-  font-size: 0.8em; 
-  margin-right: 5px; 
-}
-
-    .navbar-brand::before {
+        .navbar-brand::before {
             content: '';
             position: absolute;
             top: 0;
@@ -97,12 +71,13 @@ body {
             100% { transform: rotate(360deg); }
         }
 
+      
         .navbar {
-            background-color: #6a1b9a;
+            background-color: #6a1b9a; 
         }
 
         .navbar-light .navbar-nav .nav-link {
-            color: #ffffff; 
+            color: black; 
         }
 
 .card {
@@ -113,7 +88,6 @@ body {
 .card:hover {
   transform: translateY(-5px);
 }
-
 
 
 footer p {
