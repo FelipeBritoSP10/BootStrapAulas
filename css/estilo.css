@@ -27,7 +27,7 @@ body {
   transition: transform 0.3s ease; 
 }
 
-.navbar-brand {
+ .navbar-brand {
         background-color: #6f42c1;
         color: white;
         font-size: 1.5rem;
@@ -40,9 +40,10 @@ body {
         margin-left: 10px;
     }
     
-    .navbar-brand:hover { 
+    .navbar-brand:hover {
         transform: translateX(10px);
     }
+
 
 .navbar-nav .nav-link {
   font-size: 1.2rem;
