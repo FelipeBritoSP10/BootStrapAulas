@@ -44,6 +44,11 @@ body {
   transform: translateY(-5px);
 }
 
+
+ .navbar-brand {
+      margin-left: 25px;
+ }
+
 .navbar-brand:hover {
   transform: scale(1.1); 
 }
